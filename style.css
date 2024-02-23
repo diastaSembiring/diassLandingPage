@@ -1,0 +1,201 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: "Opens-sans", sans-serif;
+}
+h1,h2,h3 {
+    font-family: "Oswald",sans-serif;
+    font-weight: 700;
+}
+hr {
+    max-width: 300px;
+    margin: 0 auto;
+}
+#landing-page{
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    background-image: url(bckgrnd.avif);
+}
+.welcome-text {
+    position: absolute;
+    width: 100%;
+    top:50%;
+    margin: 0;
+    text-align: center;
+    color: white;
+
+}
+ul.nav{
+    position: sticky;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    top: 0;
+    background-color: black;
+    text-align: center;
+}
+.nav>li {
+    display: inline-block;
+    margin: auto;
+    font-family: "Oswald",sans-serif;
+    font-weight: 300;
+    color: white;
+}
+.nav>li>a {
+    display: inline-block;
+    padding: 1em 2em;
+    color: white;
+    text-decoration: none;
+}
+.nav>li>a:hover{
+    background-color: teal;
+    transition: 0.5s;
+}
+#about-me {
+    padding: 2em 0;
+}
+.section-introduction,.section-working,.section-education {
+    text-align: center;
+}
+.section-working,.section-education {
+    margin-top: 2em;
+    display: inline-block;
+}
+.img-icon {
+    max-width: 12em;
+}
+.content-perkenalan {
+    width: 80%;
+    max-width: 24em;
+    margin: 1em auto;
+    text-align: center;
+    font-size: 1.2em;
+    display: inline-block;
+}
+#portofolio {
+    width: 100%;
+    padding: 2em 0;
+}
+.title-portofolio,.title-contact-us {
+    text-decoration: underline;
+    text-align: center;
+}
+.desktop {
+    display: none !important;
+}
+.container {
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+}
+.img-portofolio {
+    width: 90%;
+    max-width: 300px;
+    vertical-align: middle;
+    margin: 1em 0;
+    margin-bottom: 0.5em 0;
+   display: inline-block;
+}
+.form-contact-us,.contact-info {
+    width: 100%;
+    text-align: center;
+}
+.inputan {
+    width: 85%;
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+}
+.inputan>label {
+    display: block;
+    font-size: 1.2em;
+}
+.inputan>input,.inputan>textarea {
+    width: 100%;
+    font-size: 1em;
+    margin: 0.5em auto;
+}
+.btn-kirim {
+    width: 85%;
+    border: none;
+    text-align: center;
+    background-color: teal;
+    color: white;
+    padding: 1em 0;
+    font-size: 1em;
+}
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin-top: 2em ;
+    padding: 1.5em 0; 
+}
+.contact-icon {
+    margin: 2em;
+    width: 50px;
+}
+.contact-desktop {
+    display: none;
+}
+.contact-icon-bundler {
+    display: block;
+}
+.contact-info>div {
+    display: inline-block;
+}
+@media only screen and (min-width :600px) {
+  .non-desktop {
+    display: none;
+  }
+  .desktop {
+    display: block !important;
+  }
+  li.nav-icon {
+    padding: 0;
+    width: 45px;
+    margin: 0.3em 1em;
+    float: left;
+  }
+  .nav-icon>img {
+    width: 100%;
+  }
+  ul.nav {
+    text-align: right;
+  }
+  .section-working,.section-education {
+    width: 49.5%;
+    vertical-align: top;
+  }
+  hr {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .form-contact-us,.contact-info {
+    width: 49.5%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  #contact-us {
+    vertical-align: top;
+ }
+ .contact-desktop {
+    display: inline-block;
+    vertical-align: middle;
+ }
+ .contact-icon-bundler {
+    display: inline-block;
+    min-width: 300px;
+    color: black;
+    text-decoration: none;
+ }
+ .contact-icon {
+    display: inline-block;
+    vertical-align: middle;
+ }
+ .contact-info>div {
+    display: block;
+ }
+}
